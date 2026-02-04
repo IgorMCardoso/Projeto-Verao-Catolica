@@ -1,0 +1,63 @@
+Contexto da página:
+
+Uma família de origem italiana tinha o sonho de abrir sua pizzaria. Enfim, houve a oportunidade e conseguiram abrir um pequeno restaurante.
+Percebendo que as vendas não estavam tão práticas, decidiram desenvolver um site para melhorar a solicitação de pizzas, aumento de vendas e compartilhamento do restaurante.
+
+História de usuário:
+
+Um adolescente moderno, pretende fazer um aniversário em um restaurante, coincidentemente, abriu um novo restaurante próximo de sua casa.
+
+usuário quer:
+Acessar rapidamente;
+intuitivo;
+promoção;
+cardapio na página inicial pra não proporcionar trabalho;
+opção de adicionar itens ao carrinho diretamente no cardápio;
+opção de acessar a própria conta;
+acessar o carrinho;
+finalizar compra;
+
+
+
+
+
+
+
+
+
+
+
+
+Modelo:
+Pagina inicial + cardapio;
+Login;
+cadastro
+Esqueceu a senha;
+Carrinho;
+pagina do usuário (conta);
+Contato/trabalhe conosco;
+
+
+1° dia
+login
+Esqueceu a senha
+pagina do usuario
+trabalhe consco
+
+2° dia
+cadastro
+pagina inicial
+carrinho
+
+
+
+
+Cadastro
+Nome completo
+senha
+confirmação de senha
+endereço cep 
+numero de telefone
+cpf
+data de nascimento
+2° endereço
