@@ -1,38 +1,47 @@
-body{
+body {
   background-color: #E0A380;
 }
- header{
-   display: flex;
-   justify-content: center;
- }
 
- .logo{
-   width: auto;
-   height: 20rem;
-   border-radius: 500px;
-   background-color: none;
- }
+header {
+  display: flex;
+  justify-content: center;
+}
 
- .sobreNos{
+.logo {
+  width: auto;
+  height: 20rem;
+  border-radius: 500px;
+  background-color: none;
+}
+
+.sobreNos {
   display: flex;
   flex-direction: column;
   align-items: center;
- }
+}
 
- .sobreNos_titulo{
-   font-size: 3rem;
- }
+.sobreNos_titulo {
+  font-size: 3rem;
+}
 
- .sobreNos_texto{
-   font-size: 1.3rem;
-   width: 70rem;
- }
+.sobreNos_texto {
+  font-size: 2rem;
+  width: 70rem;
+  background-color: aliceblue;
+  padding: 1.5rem;
+  border-radius: 1rem;
 
- .talentos{
-   display: flex;
-   justify-content: center;
-   font-size: 2rem;
- }
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.talentos {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
 
 
 .formularios {
@@ -53,7 +62,7 @@ form div {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  align-items: center; 
+  align-items: center;
 }
 
 .input-group {
@@ -83,32 +92,30 @@ button {
   margin-top: 10px;
 }
 
-button:hover{
+button:hover {
   background-color: #de7c09;
 
 }
 
 
-footer{
-display: flex;
-flex-direction: row;
-justify-content: center;
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-address{
+address {
   display: flex;
   justify-content: center;
 }
 
-.redes_sociais{
+.redes_sociais {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
-.redes_sociais_icones{
-   width: auto;
-   height: 2.5rem;
- }
-
-
+.redes_sociais_icones {
+  width: auto;
+  height: 2.5rem;
+}
