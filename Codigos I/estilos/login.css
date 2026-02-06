@@ -35,13 +35,14 @@ form {
     height: 30px;
     width: 300px;
     border: 1px solid black; 
-    border-radius: 12px;
+    border-radius: 6px;
 }
 
-.informacoes {
+.informacoes, .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 
 }
 
@@ -62,4 +63,12 @@ button:hover{
 }
 #EsqueciASenha {
     display: flex;
+}
+
+.container {
+    background-color: white;
+    padding: 80px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
 }
