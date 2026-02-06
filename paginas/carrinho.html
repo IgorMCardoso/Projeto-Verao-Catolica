@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="estilos/carrinho.css" />
+  <link rel="icon" href="imagens/Logo.png" />
+  <title>Carrinho</title>
+</head>
+
+<body>
+
+  <header class="cabecalho">
+    <div class="cabecalho-container">
+
+      <!-- Logo -->
+      <a href="home.html" class="logo-link">
+        <img src="imagens/Logo.png" alt="Logo do Restaurante" class="logo">
+      </a>
+
+      <nav class="menu">
+        <a href="cardapio.html">Cardápio</a>
+        <a href="">Promoções</a>
+        <a href="">Sobre</a>
+        <a href="">Contato</a>
+        <a href="trabalheConosco.html">Trabalhe Conosco</a>
+      </nav>
+
+      <!-- Ações -->
+      <div class="acoes-container">
+        <a class="icon-btn carrinho" href="carrinho.html" title="Carrinho">
+          <img src="imagens/carrinho.png" alt="Carrinho">
+          <span class="badge">2</span>
+        </a>
+
+        <a class="icon-btn" href="conta.html" title="Perfil">
+          <img src="imagens/perfil.png" alt="Perfil">
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div class="carrinho_titulo">
+      <h1>Seu Carrinho</h1>
+    </div>
+
+    <section class="card-grid">
+      <ul class="card-list">
+        <li class="card-item">
+          <div class="item-media">
+            <img src="imagens/pizza.png" alt="Imagem do item" class="item-image">
+          </div>
+
+          <div class="item-desc">
+            <h2 class="item-title">Pizza Margherita</h2>
+            <p class="item-text">
+              Massa fina, molho de tomate, muçarela, manjericão fresco.
+              Tamanho médio (6 fatias).
+            </p>
+            <p class="item-price">R$ 29,90</p>
+          </div>
+
+          <div class="item-controls">
+            <button class="circulo-btn aumentar">+</button>
+            <input class="qty inputBox" type="number" min="1" value="1">
+
+            <button class="circulo-btn diminuir">-</button>
+            <button class="lixeira-btn">Lixeira</button>
+          </div>
+        </li>
+
+        <li class="card-item">
+          <div class="item-media">
+            <img src="imagens/refri.png" alt="Imagem do item" class="item-image">
+          </div>
+
+          <div class="item-desc">
+            <h2 class="item-title">Refrigerante 2L</h2>
+            <p class="item-text">Refrigerante gelado, sabor à sua escolha.</p>
+            <p class="item-price">R$ 8,50</p>
+          </div>
+
+          <div class="item-controls">
+            <button class="circulo-btn aumentar">+</button>
+            <input class="qty inputBox" type="number" min="1" value="1">
+            <button class="circulo-btn diminuir">-</button>
+            <button class="lixeira-btn">Lixeira</button>
+          </div>
+        </li>
+      </ul>
+
+      <div class="resumo-box">
+        <h2 id="resumo-titulo">Resumo do pedido</h2>
+
+        <div class="resumo-row">
+          <span>Desconto</span>
+          <span class="resumo-valor">R$ 0,00</span>
+        </div>
+
+        <div class="resumo-row total">
+          <span>Total</span>
+          <span class="resumo-valor">R$ 38,40</span>
+        </div>
+
+        <button class="compra" type="button">Efetuar compra</button>
+      </div>
+    </section>
+  </main>
+</body>
+
+<footer class="rodape-padrao">
+  <div class="footer-container">
+    <p class="endereco">Rua Donna Margherita, 1950 - Vila Esperança</p>
+    <div class="redes">
+      <img src="imagens/whatsapp.png" alt="WhatsApp">
+      <img src="imagens/instagram.png" alt="Instagram">
+      <img src="imagens/facebook.png" alt="Facebook">
+    </div>
+    <p class="copyright">© 2026 Pizzaria Nostra - Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+</html>

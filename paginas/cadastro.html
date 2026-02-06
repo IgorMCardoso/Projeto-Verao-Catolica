@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/cadastro.css">
+    <link rel="icon" href="imagens/Logo.png">
+    <title>Criando conta</title>
+</head>
+<body>
+
+            <a class="logo-link" href="home.html">
+                <img src="imagens/Logo.png" alt="Logo do restaurante" class="logo">
+            </a>
+    <div class="container">
+        <h1>Cadastrando-se</h1>
+        <form>
+            <div class="informacoes">
+                <h2>Dados da conta</h2>
+
+                <label for="email">E-mail</label>
+                <input class="inputBox" id="email" name="email" type="email" placeholder="Digite seu email" >
+
+                <label for="senha">Senha</label>
+                <input class="inputBox" id="senha" name="senha" type="password" placeholder="Crie uma senha" >
+
+                <label for="confirmar-senha">Confirmar senha</label>
+                <input class="inputBox" id="confirmar-senha" name="confirmar-senha" type="password" placeholder="Digite a senha criada novamente" >
+            </div>
+
+            <div class="informacoes">
+                <h2>Informações pessoais</h2>
+                <label for="nome">Nome</label>
+                <input class="inputBox" id="nome" name="nome" type="text" placeholder="Digite seu nome completo" >
+                <label for="cpf">CPF</label>
+                <input class="inputBox" id="cpf" name="cpf" type="text" placeholder="000.000.000-00" >
+                <label for="data-nascimento">Data de nascimento</label>
+                <input class="inputBox" id="data-nascimento" name="data-nascimento" type="date" value="2000-01-01" >
+            </div>
+
+            <div class="informacoes">
+                <h2>Contato</h2>
+                <label for="telefone">Telefone</label>
+                <input class="inputBox" id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000" >
+            </div>
+
+            <div class="informacoes">
+                <h2>Endereço</h2>
+                <label for="cep">CEP</label>
+                <input class="inputBox" id="cep" name="cep" type="text" placeholder="00000-000" >
+
+                <label for="endereco">Endereço</label>
+                <input class="inputBox" id="endereco" name="endereco"  type="text" placeholder="Rua, número e bairro" >
+                <br>
+           <a href="home.html" class="botao-entrar" style="text-decoration: none; display: block; text-align: center;">Cadastrar</a>
+        </form>
+        <br>
+        <p>Já tem uma conta? <a href="login.html">Faça o login aqui!</a></p>
+    </div>
+    
+</body>
+</html>

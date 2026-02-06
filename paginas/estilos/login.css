@@ -46,7 +46,7 @@ form {
 
 }
 
-button {
+.botao-enviar {
   padding: 15px;
   font-size: 1.5rem;
   background-color: #DE3209;
@@ -57,7 +57,7 @@ button {
   margin-top: 10px;
 }
 
-button:hover{
+.botao-enviar:hover{
   background-color: #de7c09;
 
 }

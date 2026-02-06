@@ -1,7 +1,7 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,61 +9,112 @@ body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: #222;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 24px 12px;
+    min-height: 100vh; /* Garante que o corpo ocupe a tela toda */
+    /* Removido o padding e o align-items daqui */
 }
 
 .cabecalho {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 18px;
-    position: relative;
-    background: transparent;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.08);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+    height: 5rem;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #eee;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Sombra leve ao passar o mouse (desktop) */
+.cabecalho:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .cabecalho-container {
     width: 100%;
-    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgba(255,255,255,0);
 }
 
+/* Logo */
 .logo {
-    width: 160px;
-    height: auto;
+    width: 60px;
+    transition: transform 0.2s ease;
 }
 
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    position: relative;
+}
+
+/* Linha simples no hover */
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #ff4d00;
+    transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+/* Ações */
 .acoes-container {
     display: flex;
-    gap: 12px;
-    align-items: center;
+    gap: 0.5rem;
 }
 
+/* Botões */
 .icon-btn {
-    display: inline-flex;
+    width: 38px;
+    height: 38px;
+    background: #f5f5f5;
+    border-radius: 50%;
+
+    display: flex;
     align-items: center;
     justify-content: center;
-    width: 52px;
-    height: 52px;
-    background: #ffffff;
-    border-radius: 8px;
-    text-decoration: none;
-    color: #222;
-    box-shadow: 3px 6px 10px rgba(0,0,0,0.12);
-    font-size: 1.2rem;
+
+    transition: background 0.2s ease, transform 0.2s ease;
 }
 
+.icon-btn:hover {
+    background: #eaeaea;
+    transform: translateY(-2px);
+}
+
+.icon-btn img {
+    width: 18px;
+}
 .container {
     width: 100%;
     max-width: 1100px;
+    margin: 0 auto;       /* Centraliza o conteúdo horizontalmente */
+    padding: 40px 12px;   /* O respiro que antes estava no body agora fica aqui */
+    flex: 1;              /* Empurra o footer para o final da página */
 }
 
 .container > h1 {
@@ -86,6 +137,18 @@ body {
     gap: 14px;
 }
 
+.carrinho_titulo{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 24rem;
+  margin-top: 5px;
+border: 3px solid #DE3209;
+}
+
 .card-item {
     display: grid;
     grid-template-columns: 120px minmax(0, 1fr) 320px;
@@ -95,6 +158,8 @@ body {
     padding: 14px;
     border-radius: 12px;
     box-shadow: 3px 6px 10px rgba(0,0,0,0.08);
+    height: 14rem;
+border: 3px solid #DE3209;
 }
 
 .item-media {
@@ -114,9 +179,9 @@ body {
 .item-desc {
     display: flex;
     flex-direction: column;
+    text-align: justify;
     gap: 8px;
     min-width: 0;
-    padding-right: 56px;
     position: relative;
     overflow-wrap: break-word;
 }
@@ -195,6 +260,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
+border: 3px solid #DE3209;
 }
 
 .compra {
@@ -210,6 +276,54 @@ body {
 
 .compra:hover {
     background: #de7c09;
+}
+
+
+/* --- FOOTER PADRÃO --- */
+.rodape-padrao {
+    background-color: white; /* Mesma cor do seu navbar para padronizar */
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px; /* Aumentei o respiro */
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; /* Espaço uniforme entre os elementos */
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.endereco {
+    font-weight: bold;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaço entre as imagens das redes sociais */
+}
+
+.redes img {
+    width: 28px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s;
+}
+
+.redes img:hover {
+    transform: translateY(-5px); /* Efeito de pulo um pouco mais evidente */
+    opacity: 0.8;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 10px;
 }
 
 @media (max-width: 900px) {
@@ -241,4 +355,14 @@ body {
     .card-list {
         padding-right: 8px;
     }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> Trabalhe conosco </title>
-  <link href="trabalheConosco.css" rel="stylesheet">
+  <link href="estilos/trabalheConosco.css" rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,12 +16,43 @@
 </head>
 
 <body>
-  <header>
-    <img class="logo" src="imagens/logo.png" alt="Logo da loja">
+
+
+  <header class="cabecalho">
+    <div class="cabecalho-container">
+
+      <!-- Logo -->
+      <a href="home.html" class="logo-link">
+        <img src="imagens/Logo.png" alt="Logo do Restaurante" class="logo">
+      </a>
+
+      <nav class="menu">
+        <a href="cardapio.html">Cardápio</a>
+        <a href="">Promoções</a>
+        <a href="">Sobre</a>
+        <a href="">Contato</a>
+        <a href="trabalheConosco.html">Trabalhe Conosco</a>
+      </nav>
+
+      <!-- Ações -->
+      <div class="acoes-container">
+        <a class="icon-btn carrinho" href="carrinho.html" title="Carrinho">
+          <img src="imagens/carrinho.png" alt="Carrinho">
+          <span class="badge">2</span>
+        </a>
+
+        <a class="icon-btn" href="conta.html" title="Perfil">
+          <img src="imagens/perfil.png" alt="Perfil">
+        </a>
+      </div>
+
+    </div>
   </header>
 
   <main>
-
+    <div class="logo-main-topo">
+      <img class="logo-main" src="imagens/Logo.png" alt="Logo da loja">
+    </div>
     <div class="sobreNos">
       <h1 class="sobreNos_titulo">Venha ser parte de nossa familia!!!</h1>
       <div class="sobreNos_texto">
@@ -32,10 +63,12 @@
           honrar essa memória. Aqui, cada massa fermenta lentamente, cada ingrediente é escolhido com respeito, e o
           forno a lenha carrega o mesmo calor que aqueceu gerações. Para nós, pizza é ritual, é família, é pausa no
           mundo.
-          <br><br>
-          Quando você entra na Pizzaria Nostra, não vem apenas comer vem compartilhar uma história viva. Cada fatia é
+        </p>
+
+        <p> Quando você entra na Pizzaria Nostra, não vem apenas comer vem compartilhar uma história viva. Cada fatia é
           um convite para sentar à mesa, lembrar de onde viemos e sentir, sem pressa, o sabor da velha Itália. A receita
           é antiga, mas a paixão é diária. E é assim, noite após noite, que mantemos acesa a chama da nossa tradição.
+        </p>
       </div>
     </div>
 
@@ -74,6 +107,11 @@
         <div class="input-group">
           <label for="experiencia">Última empresa onde trabalhou e cargo exercido:</label>
           <input type="text" name="experiencia">
+        </div>
+
+        <div class="div-curriculo">
+          <label for="curriculo">Adicione o seu Curriculo:</label>
+          <input class="curriculo" type="file" name="curriculo">
         </div>
 
         <button type="submit">Enviar</button>
